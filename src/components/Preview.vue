@@ -1,6 +1,6 @@
 <template lang="html">
     <div class="seats-preview">
-        <span v-for="(seat, index) in selectedSeatsProp">{{ seat }}</span>
+        <span v-for="(seat, index) in selectedSeatsProp" :key="`seat-${index}`">{{ seat }}</span>
         <h5 v-if="tooManySeatsSelected">Too many seats selected.</h5>
         <button @click="startReservation" type="button" :class="{'disabled': tooManySeatsSelected}">Reserve selected seats</button>
     </div>

@@ -28,7 +28,7 @@
         },
         created () {
             this.checkReservations()
-            this.$store.subscribe((mutation, state) => {
+            this.$store.subscribe((mutation) => {
                 if (mutation.type === 'RESERVE_SEATS') this.checkReservations()
             })
         },
