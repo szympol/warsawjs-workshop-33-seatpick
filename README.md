@@ -20,7 +20,7 @@ The functionality of the app:
 
 This project requires a server to start working.
 
-- [View project online](https://brave-joliot-a88cbb.netlify.com/)
+- [View project online](https://zealous-wozniak-3b4b46.netlify.com/)
 
 Please follow instructions below, if you are willing to run the project locally.
 
