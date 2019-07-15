@@ -7,7 +7,9 @@
                 <input type="text" v-model="name" placeholder="Write you name">
                 <input type="text" v-model="surname" placeholder="Write you surname">
                 <select v-model="payment">
-                    <option v-for="(type, index) in paymentTypes" :key="`paymentType-${index}`"> {{ type }} </option>
+                    <optgroup label = "Choose your payment method">
+                        <option v-for="(type, index) in paymentTypes" :key="`paymentType-${index}`"> {{ type }} </option>
+                    </optgroup>
                 </select>
             <button type="submit" class="reversed" :class="{'disabled': validate}">Reserve seats</button>
             </form>
@@ -70,9 +72,8 @@ input, select {
     width: 20px;
     height: 20px;
     position: absolute;
-    display: inline-block;
     background-repeat: no-repeat;
-    background-image: url('/assets/arrow.png')
+    background-image: url('/assets/arrow.png');
   }
   h4 {
     color: green;
